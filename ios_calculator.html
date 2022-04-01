@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/calculator.js"></script>
+    <title>Document</title>
+    <style>
+        .orange-btn:hover {
+            background-color: #f8ac42;
+        }
+        
+        .orange-btn {
+            background-color: #fe9504;
+        }
+        
+        .light-grey-btn:hover {
+            background-color: #cccbcb;
+        }
+        
+        .light-grey-btn {
+            background-color: #a5a5a5;
+        }
+        
+        .dark-grey-btn:hover {
+            background-color: #575656;
+        }
+        
+        .dark-grey-btn {
+            background-color: #333333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-2"></div>
+
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                <br />
+                <div id="calculator_space" class="bg-black">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <span class="text-white float-end display-1 displayResult"></span>
+                                <span class="text-black float-start display-1">.</span>
+                            </div>
+                        </div>
+                        <br />
+
+                        <div class="row">
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn-secondary btn-circle btn-lg text-dark btn-symbol" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">C</strong>
+                    </strong>
+                  </button>
+                            </div>
+
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn-secondary btn-circle btn-lg text-dark" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">&plusmn;</strong>
+                    </strong>
+                  </button>
+                            </div>
+
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn-secondary btn-circle btn-lg text-dark" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">&percnt;</strong>
+                    </strong>
+                  </button>
+                            </div>
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn-circle btn-lg text-white orange-btn btn-symbol" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">&div;</strong>
+                    </strong>
+                  </button>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row text-white">
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn btn-circle btn-lg text-white dark-grey-btn btn-symbol" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">7</strong>
+                    </strong>
+                  </button>
+                            </div>
+
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn btn-circle btn-lg text-white dark-grey-btn btn-symbol" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">8</strong>
+                    </strong>
+                  </button>
+                            </div>
+
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn-circle btn-lg text-white dark-grey-btn btn-symbol" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">9</strong>
+                    </strong>
+                  </button>
+                            </div>
+
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn-circle btn-lg text-white orange-btn btn-symbol" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">&times;</strong>
+                    </strong>
+                  </button>
+                            </div>
+                        </div>
+
+                        <br />
+                        <div class="row">
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn btn-circle btn-lg text-white dark-grey-btn btn-symbol" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">4</strong>
+                    </strong>
+                  </button>
+                            </div>
+
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn btn-circle btn-lg text-white dark-grey-btn btn-symbol" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">5</strong>
+                    </strong>
+                  </button>
+                            </div>
+
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn btn-circle btn-lg text-white dark-grey-btn btn-symbol" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">6</strong>
+                    </strong>
+                  </button>
+                            </div>
+
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn-circle btn-lg text-white orange-btn btn-symbol" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">-</strong>
+                    </strong>
+                  </button>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn btn-circle btn-lg text-white dark-grey-btn btn-symbol" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">1</strong>
+                    </strong>
+                  </button>
+                            </div>
+
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn-circle btn-lg text-white dark-grey-btn btn-symbol" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">2</strong>
+                    </strong>
+                  </button>
+                            </div>
+
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn-circle btn-lg text-white dark-grey-btn btn-symbol" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">3</strong>
+                    </strong>
+                  </button>
+                            </div>
+
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn-circle btn-lg text-white orange-btn btn-symbol" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">+</strong>
+                    </strong>
+                  </button>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-sm-6 text-center" style="padding-right: 50px">
+                                <button class="btn btn-circle btn-lg text-white dark-grey-btn rounded-pill btn-symbol" style="
+                      border-bottom-left-radius: 40%;
+                      border-top-left-radius: 40%;
+                      border-top-right-radius: 40%;
+                      border-bottom-right-radius: 40%;
+                      width: 150px;
+                      height: 70px;
+                    ">
+                    <strong>
+                      <strong class="display-6 float-start">0</strong>
+                    </strong>
+                  </button>
+                            </div>
+
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn-dark btn-circle btn-lg text-white dark-grey-btn btn-symbol" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">.</strong>
+                    </strong>
+                  </button>
+                            </div>
+
+                            <div class="col-sm-3 text-center">
+                                <button class="btn btn-circle btn-lg text-white orange-btn btn-symbol" style="border-radius: 50%; width: 70px; height: 70px">
+                    <strong>
+                      <strong class="display-6">=</strong>
+                    </strong>
+                  </button>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+    <script>
+        // var symbol = document.getElementById("btn-symbol").textContent;
+        // alert(symbol);
+    </script>
+</body>
+
+</html>
