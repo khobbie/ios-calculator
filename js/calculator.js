@@ -75,7 +75,7 @@ $(document).ready(function() {
             $(".displayResult").addClass("display-6")
         }
 
-        if (symbol === "C") {
+        if (symbol === "CLEAR") {
             resultString = "";
             actualResultString = "";
 
